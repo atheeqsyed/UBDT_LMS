@@ -11,7 +11,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        // No need to bind the 'Role' class here unless explicitly required.
     }
 
     /**

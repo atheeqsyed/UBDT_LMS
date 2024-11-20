@@ -1,10 +1,9 @@
 <?php
-
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
+class CreateLecturesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -15,7 +14,7 @@ return new class extends Migration
         $table->id();
         $table->string('title');
         $table->string('subject');
-        $table->string('file_path');
+        $table->date('upload_date');
         $table->string('file_type');
         $table->timestamps();
     });
@@ -26,4 +25,4 @@ public function down()
     Schema::dropIfExists('lectures');
 }
 
-};
+}

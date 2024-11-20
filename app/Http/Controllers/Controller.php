@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
-abstract class Controller
+use Illuminate\Routing\Controller as BaseController;
+
+class Controller extends BaseController
 {
-    //test
+    // Any common logic for all controllers can be placed here.
 }

@@ -9,6 +9,6 @@ class Lecture extends Model
 {
     use HasFactory;
 
-    // Define the fillable fields if needed
-    protected $fillable = ['title', 'description', 'date'];
+    // Ensure this matches your database structure
+    protected $fillable = ['title', 'subject', 'upload_date', 'file_type', 'file_path'];
 }
